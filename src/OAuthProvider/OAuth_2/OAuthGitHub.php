@@ -36,4 +36,3 @@ class OAuthGitHub extends AbstractProvider
         return 'token';
     }
 }
- 

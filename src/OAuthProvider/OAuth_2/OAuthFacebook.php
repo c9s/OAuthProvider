@@ -23,4 +23,5 @@ class OAuthFacebook extends AbstractProvider
     public function getValidScopes() {
         return explode(',','email,user_birthday,user_about_me,user_status,user_photos,friends_photos,read_stream');
     }
+
 }

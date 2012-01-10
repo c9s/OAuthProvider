@@ -2,7 +2,7 @@
 
 namespace OAuthProvider\OAuth_2;
 
-class AbstractProvider
+abstract class AbstractProvider
 {
 
     const version = '2.0';
@@ -17,7 +17,7 @@ class AbstractProvider
             $this->clientId = $options['client_id'];
         if(isset($options['client_secret']))
             $this->clientSecret = $options['client_secret'];
-        if(isset($options['valid_scopes'])
+        if(isset($options['valid_scopes']))
             $this->validScopes = $options['valid_scopes'];
     }
 
@@ -31,7 +31,8 @@ class AbstractProvider
 
     abstract public function getAuthorizeUrl();
     abstract public function getAccessTokenUrl();
-    abstract public function getValidScopes();
+
+    public function getValidScopes() {  }
 
     /**
      * return default response type: token
@@ -53,4 +54,5 @@ class AbstractProvider
     public function getGrantType() {
         return 'none';
     }
+
 }
