@@ -28,11 +28,12 @@ class OAuthGitHub extends AbstractProvider
         return 'https://' . self::host . '/login/oauth/access_token';
     }
 
-    public function getScopes() {
-        return '';
+    public function getValidScopes() {
+        return explode(',','user,public_repo,repo,gist');
     }
 
-
-
+    public function getResponseType() { 
+        return 'token';
+    }
 }
  

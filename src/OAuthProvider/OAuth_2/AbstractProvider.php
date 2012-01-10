@@ -8,7 +8,6 @@ class AbstractProvider
     const version = '2.0';
     const host = '';
 
-    public $validScopes = array();
     public $clientId;
     public $clientSecret;
 
@@ -32,5 +31,26 @@ class AbstractProvider
 
     abstract public function getAuthorizeUrl();
     abstract public function getAccessTokenUrl();
-    abstract public function getScopes();
+    abstract public function getValidScopes();
+
+    /**
+     * return default response type: token
+     *
+     * valid types: 'token', 'code'
+     *
+     * @see http://developers.gigya.com/020_Developer_Guide/85_REST/OAuth2
+     */
+    public function getResponseType() {
+        return 'token';
+    }
+
+
+    /**
+     * return default grant type: 'none'
+     *
+     * valid types: 'authorization_code', 'none'
+     */
+    public function getGrantType() {
+        return 'none';
+    }
 }
