@@ -18,6 +18,8 @@ class AbstractProvider
             $this->clientId = $options['client_id'];
         if(isset($options['client_secret']))
             $this->clientSecret = $options['client_secret'];
+        if(isset($options['valid_scopes'])
+            $this->validScopes = $options['valid_scopes'];
     }
 
     public function getClientId() {

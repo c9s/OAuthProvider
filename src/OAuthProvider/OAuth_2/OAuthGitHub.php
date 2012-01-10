@@ -17,7 +17,7 @@ class OAuthGitHub extends AbstractProvider
 	response_type    => 'code',
 	grant_type       => 'authorization_code',
 	request_method   => 'POST',
-     */
+    */
     const host = 'github.com';
 
     public function getAuthorizeUrl() {
@@ -31,7 +31,6 @@ class OAuthGitHub extends AbstractProvider
     public function getScopes() {
         return '';
     }
-
 
 
 
