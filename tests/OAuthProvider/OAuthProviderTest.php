@@ -9,6 +9,7 @@ class OAuthProviderTest extends PHPUnit_Framework_TestCase
             'consumer_secret' => 'aaa',
         ));
         ok( $provider );
+        is( 'aaa' , $provider->getConsumerKey() );
     }
 }
 

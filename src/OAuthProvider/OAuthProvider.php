@@ -28,9 +28,11 @@ class OAuthProvider
      * ));
      *
      */
-    static function create($providerName, $args = array())
+    static function create($providerName)
     {
         $class = self::$providers[ $providerName ];
+        $args = func_get_args();
+        array_shift($args);
         $rc = new ReflectionClass( $class );
         return $rc->newInstanceArgs( $args );
     }
