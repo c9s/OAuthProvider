@@ -11,7 +11,7 @@
     <active>yes</active>
   </lead>
   <date>2012-01-19</date>
-  <time>04:56:46</time>
+  <time>05:06:51</time>
   <version>
     <release>0.0.3</release>
     <api>0.0.3</api>
@@ -29,7 +29,7 @@
       <file name="tests/OAuthProvider/OAuth_1a/OAuthTwitterTest.php" role="test" md5sum="068df7706bd5385fe7049b9264482e26"/>
       <file name="tests/OAuthProvider/OAuthProviderTest.php" role="test" md5sum="550bd3766abcb36c092d991e43fdaaa3"/>
       <file name="src/OAuthProvider/OAuth_1a/AbstractProvider.php" role="php" md5sum="168cbab60afc3e1bad27bb0325a392f8"/>
-      <file name="src/OAuthProvider/OAuth_1a/OAuthPlurk.php" role="php" md5sum="c38a160f2c9441a1791bd6c46052bb8e"/>
+      <file name="src/OAuthProvider/OAuth_1a/OAuthPlurk.php" role="php" md5sum="b79f815ef22a12ded7868580dc0a58aa"/>
       <file name="src/OAuthProvider/OAuth_1a/OAuthTwitter.php" role="php" md5sum="645a48c00a5e46c1a037318761851fe5"/>
       <file name="src/OAuthProvider/OAuth_2/AbstractProvider.php" role="php" md5sum="e19185e4cd5fdc13d6c9cc86c3076c24"/>
       <file name="src/OAuthProvider/OAuth_2/OAuthFacebook.php" role="php" md5sum="1061b187651a63da373a1bef24282c47"/>
