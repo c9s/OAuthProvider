@@ -10,9 +10,9 @@ class OAuthPlurk extends AbstractProvider
 
     public function getRequestTokenMethod() { return 'POST'; }
 
-    public function getAccessTokenUrl() { return 'https://' . self::host . '/OAuth/access_token'; }
+    public function getAccessTokenUrl() { return 'http://' . self::host . '/OAuth/access_token'; }
 
     public function getAccessTokenMethod() { return 'POST'; }
 
-    public function getAuthorizeUrl() { return 'https://' . self::host . '/OAuth/authorize'; }
+    public function getAuthorizeUrl() { return 'http://' . self::host . '/OAuth/authorize'; }
 }
