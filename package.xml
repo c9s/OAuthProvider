@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.4.10" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0        http://pear.php.net/dtd/tasks-1.0.xsd        http://pear.php.net/dtd/package-2.0        http://pear.php.net/dtd/package-2.0.xsd">
   <name>OAuthProvider</name>
-  <channel>pear.corneltek.com</channel>
+  <channel>private-pear.corneltek.com</channel>
   <summary>OAuthProvider</summary>
   <description>OAuthProvider</description>
   <lead>
@@ -10,8 +10,8 @@
     <email>cornelius.howl@gmail.com</email>
     <active>yes</active>
   </lead>
-  <date>2012-01-10</date>
-  <time>22:43:28</time>
+  <date>2012-01-19</date>
+  <time>04:04:12</time>
   <version>
     <release>0.0.1</release>
     <api>0.0.1</api>
@@ -24,13 +24,12 @@
   <notes>-</notes>
   <contents>
     <dir name="/">
-      <file name="tests/OAuthProvider/OAuth_1a/OAuthTwitterTest.php" role="test" md5sum="068df7706bd5385fe7049b9264482e26"/>
-      <file name="tests/OAuthProvider/OAuth_2/OAuthFacebookTest.php" role="test" md5sum="b69acd310ef95a81040717f4f4fbf223"/>
-      <file name="tests/OAuthProvider/OAuth_2/OAuthGitHubTest.php" role="test" md5sum="96ee71a29d079d8a5d94763e2fde375e"/>
       <file name="tests/bootstrap.php" role="test" md5sum="bca4c6cc10a138d0e22e365098c174d0"/>
       <file name="tests/helpers.php" role="test" md5sum="aae3a65fac318e1871de47062f2e4096"/>
+      <file name="tests/OAuthProvider/OAuth_1a/OAuthTwitterTest.php" role="test" md5sum="068df7706bd5385fe7049b9264482e26"/>
       <file name="src/OAuthProvider/OAuth_1a/AbstractProvider.php" role="php" md5sum="168cbab60afc3e1bad27bb0325a392f8"/>
-      <file name="src/OAuthProvider/OAuth_1a/OAuthTwitter.php" role="php" md5sum="c4cd422eafef0015631f27acb3161c25"/>
+      <file name="src/OAuthProvider/OAuth_1a/OAuthPlurk.php" role="php" md5sum="c38a160f2c9441a1791bd6c46052bb8e"/>
+      <file name="src/OAuthProvider/OAuth_1a/OAuthTwitter.php" role="php" md5sum="645a48c00a5e46c1a037318761851fe5"/>
       <file name="src/OAuthProvider/OAuth_2/AbstractProvider.php" role="php" md5sum="e19185e4cd5fdc13d6c9cc86c3076c24"/>
       <file name="src/OAuthProvider/OAuth_2/OAuthFacebook.php" role="php" md5sum="1061b187651a63da373a1bef24282c47"/>
       <file name="src/OAuthProvider/OAuth_2/OAuthGitHub.php" role="php" md5sum="22d8f5b466d6f30badb9c3ad1e52c233"/>
@@ -54,12 +53,11 @@
   </dependencies>
   <phprelease>
     <filelist>
-      <install name="tests/OAuthProvider/OAuth_1a/OAuthTwitterTest.php" as="OAuthProvider/OAuth_1a/OAuthTwitterTest.php"/>
-      <install name="tests/OAuthProvider/OAuth_2/OAuthFacebookTest.php" as="OAuthProvider/OAuth_2/OAuthFacebookTest.php"/>
-      <install name="tests/OAuthProvider/OAuth_2/OAuthGitHubTest.php" as="OAuthProvider/OAuth_2/OAuthGitHubTest.php"/>
       <install name="tests/bootstrap.php" as="bootstrap.php"/>
       <install name="tests/helpers.php" as="helpers.php"/>
+      <install name="tests/OAuthProvider/OAuth_1a/OAuthTwitterTest.php" as="OAuthProvider/OAuth_1a/OAuthTwitterTest.php"/>
       <install name="src/OAuthProvider/OAuth_1a/AbstractProvider.php" as="OAuthProvider/OAuth_1a/AbstractProvider.php"/>
+      <install name="src/OAuthProvider/OAuth_1a/OAuthPlurk.php" as="OAuthProvider/OAuth_1a/OAuthPlurk.php"/>
       <install name="src/OAuthProvider/OAuth_1a/OAuthTwitter.php" as="OAuthProvider/OAuth_1a/OAuthTwitter.php"/>
       <install name="src/OAuthProvider/OAuth_2/AbstractProvider.php" as="OAuthProvider/OAuth_2/AbstractProvider.php"/>
       <install name="src/OAuthProvider/OAuth_2/OAuthFacebook.php" as="OAuthProvider/OAuth_2/OAuthFacebook.php"/>
