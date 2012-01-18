@@ -15,7 +15,7 @@ class OAuthProvider
 
     static function getClass($providerName)
     {
-        return self::providers[ $providerName ];
+        return self::$providers[ $providerName ];
     }
 
 
@@ -30,7 +30,7 @@ class OAuthProvider
      */
     static function create($providerName, $args = array())
     {
-        $class = self::providers[ $providerName ];
+        $class = self::$providers[ $providerName ];
         $rc = new ReflectionClass( $class );
         return $rc->newInstanceArgs( $args );
     }
