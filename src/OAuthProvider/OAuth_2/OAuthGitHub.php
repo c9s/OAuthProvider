@@ -3,6 +3,7 @@ namespace OAuthProvider\OAuth_2;
 
 class OAuthGitHub extends AbstractProvider
 {
+    const name = 'GitHub';
     const host = 'github.com';
 
     public function getAuthorizeUrl() {

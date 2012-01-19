@@ -5,6 +5,7 @@ class OAuthYahoo extends AbstractProvider
 {
     const version = '1.0a';
     const host = 'api.login.yahoo.com';
+    const name = 'Yahoo';
 
     public function getRequestTokenUrl() { return 'https://' . self::host . '/oauth/v2/get_request_token'; }
 

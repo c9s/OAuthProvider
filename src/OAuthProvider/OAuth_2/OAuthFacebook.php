@@ -4,6 +4,7 @@ namespace OAuthProvider\OAuth_2;
 class OAuthFacebook extends AbstractProvider
 {
 
+
     /*
 	version          => 2,
 	authorize_url    => 'https://www.facebook.com/dialog/oauth',
@@ -11,6 +12,7 @@ class OAuthFacebook extends AbstractProvider
 	scope            => 'email',
     */
     const host = 'www.facebook.com';
+    const name = 'Facebook';
 
     public function getAuthorizeUrl() {
         return 'https://www.facebook.com/dialog/oauth';

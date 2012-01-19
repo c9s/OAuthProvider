@@ -12,6 +12,7 @@ class OAuthGoogle
 	request_method   => 'POST',
     */
     const host = 'accounts.google.com';
+    const name = 'Google';
 
     public function getAuthorizeUrl() {
 	    return 'https://accounts.google.com/o/oauth2/auth';

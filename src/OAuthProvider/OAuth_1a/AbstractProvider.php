@@ -9,6 +9,7 @@ abstract class AbstractProvider
 {
     const version = '1.0a';
     const host = '';
+    const name = '';
 
     public $version = '1.0a';
     public $consumerKey;
@@ -21,6 +22,13 @@ abstract class AbstractProvider
 
         if( isset($options['consumer_secret']) )
             $this->consumerSecret = $options['consumer_secret'];
+    }
+
+    public function getName()
+    {
+        if( static::name )
+            return static::name;
+        return get_class($this);
     }
 
     public function getConsumerKey()

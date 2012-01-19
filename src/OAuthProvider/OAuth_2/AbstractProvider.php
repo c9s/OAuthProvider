@@ -7,6 +7,7 @@ abstract class AbstractProvider
 
     const version = '2.0';
     const host = '';
+    const name = '';
 
     public $clientId;
     public $clientSecret;
@@ -19,6 +20,13 @@ abstract class AbstractProvider
             $this->clientSecret = $options['client_secret'];
         if(isset($options['valid_scopes']))
             $this->validScopes = $options['valid_scopes'];
+    }
+
+    public function getName()
+    {
+        if( static::name )
+            return static::name;
+        return get_class($this);
     }
 
     public function getClientId() {

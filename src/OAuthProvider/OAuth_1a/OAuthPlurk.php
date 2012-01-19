@@ -5,6 +5,7 @@ class OAuthPlurk extends AbstractProvider
 {
     const version = '1.0a';
     const host = 'www.plurk.com';
+    const name = 'Plurk';
 
     public function getRequestTokenUrl() { return 'http://' . self::host . '/OAuth/request_token'; }
 
