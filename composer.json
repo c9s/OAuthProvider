@@ -1,0 +1,19 @@
+{
+    "name": "corneltek\/oauth-provider",
+    "description": "oauth provider",
+    "authors": [
+        {
+            "name": "c9s",
+            "email": "cornelius.howl@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "corneltek/phpunit-testmore": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "OAuthProvider": "src"
+        }
+    },
+    "version": "1.0.0"
+}
