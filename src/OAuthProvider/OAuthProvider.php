@@ -10,11 +10,11 @@ class OAuthProvider
 {
 
     static $providers = array(
-        'twitter' => 'OAuthProvider\OAuth_1a\OAuthTwitter',
-        'plurk'   => 'OAuthProvider\OAuth_1a\OAuthPlurk',
-        'facebook'   => 'OAuthProvider\OAuth_2\OAuthFacebook',
-        'github'     => 'OAuthProvider\OAuth_2\OAuthGitHub',
-        'google'     => 'OAuthProvider\OAuth_2\OAuthGoogle',
+        'twitter' => 'OAuthProvider\OAuth1\OAuthTwitter',
+        'plurk'   => 'OAuthProvider\OAuth1\OAuthPlurk',
+        'facebook'   => 'OAuthProvider\OAuth2\OAuthFacebook',
+        'github'     => 'OAuthProvider\OAuth2\OAuthGitHub',
+        'google'     => 'OAuthProvider\OAuth2\OAuthGoogle',
     );
 
     static function getClass($providerName)

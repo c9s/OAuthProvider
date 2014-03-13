@@ -26,15 +26,15 @@
     <dir name="/">
       <file name="tests/bootstrap.php" role="test" md5sum="bca4c6cc10a138d0e22e365098c174d0"/>
       <file name="tests/helpers.php" role="test" md5sum="aae3a65fac318e1871de47062f2e4096"/>
-      <file name="tests/OAuthProvider/OAuth_1a/OAuthTwitterTest.php" role="test" md5sum="068df7706bd5385fe7049b9264482e26"/>
+      <file name="tests/OAuthProvider/OAuth1/OAuthTwitterTest.php" role="test" md5sum="068df7706bd5385fe7049b9264482e26"/>
       <file name="tests/OAuthProvider/OAuthProviderTest.php" role="test" md5sum="550bd3766abcb36c092d991e43fdaaa3"/>
-      <file name="src/OAuthProvider/OAuth_1a/AbstractProvider.php" role="php" md5sum="168cbab60afc3e1bad27bb0325a392f8"/>
-      <file name="src/OAuthProvider/OAuth_1a/OAuthPlurk.php" role="php" md5sum="b79f815ef22a12ded7868580dc0a58aa"/>
-      <file name="src/OAuthProvider/OAuth_1a/OAuthTwitter.php" role="php" md5sum="645a48c00a5e46c1a037318761851fe5"/>
-      <file name="src/OAuthProvider/OAuth_2/AbstractProvider.php" role="php" md5sum="e19185e4cd5fdc13d6c9cc86c3076c24"/>
-      <file name="src/OAuthProvider/OAuth_2/OAuthFacebook.php" role="php" md5sum="1061b187651a63da373a1bef24282c47"/>
-      <file name="src/OAuthProvider/OAuth_2/OAuthGitHub.php" role="php" md5sum="62e56213cf7e2117ff32a71903b5affa"/>
-      <file name="src/OAuthProvider/OAuth_2/OAuthGoogle.php" role="php" md5sum="18ce4eb2afaca5b857e5215db49fd5fb"/>
+      <file name="src/OAuthProvider/OAuth1/AbstractProvider.php" role="php" md5sum="168cbab60afc3e1bad27bb0325a392f8"/>
+      <file name="src/OAuthProvider/OAuth1/OAuthPlurk.php" role="php" md5sum="b79f815ef22a12ded7868580dc0a58aa"/>
+      <file name="src/OAuthProvider/OAuth1/OAuthTwitter.php" role="php" md5sum="645a48c00a5e46c1a037318761851fe5"/>
+      <file name="src/OAuthProvider/OAuth2/AbstractProvider.php" role="php" md5sum="e19185e4cd5fdc13d6c9cc86c3076c24"/>
+      <file name="src/OAuthProvider/OAuth2/OAuthFacebook.php" role="php" md5sum="1061b187651a63da373a1bef24282c47"/>
+      <file name="src/OAuthProvider/OAuth2/OAuthGitHub.php" role="php" md5sum="62e56213cf7e2117ff32a71903b5affa"/>
+      <file name="src/OAuthProvider/OAuth2/OAuthGoogle.php" role="php" md5sum="18ce4eb2afaca5b857e5215db49fd5fb"/>
       <file name="src/OAuthProvider/OAuthProvider.php" role="php" md5sum="6a0945f2568236a2afe365a608e22724"/>
     </dir>
   </contents>
@@ -57,15 +57,15 @@
     <filelist>
       <install name="tests/bootstrap.php" as="bootstrap.php"/>
       <install name="tests/helpers.php" as="helpers.php"/>
-      <install name="tests/OAuthProvider/OAuth_1a/OAuthTwitterTest.php" as="OAuthProvider/OAuth_1a/OAuthTwitterTest.php"/>
+      <install name="tests/OAuthProvider/OAuth1/OAuthTwitterTest.php" as="OAuthProvider/OAuth1/OAuthTwitterTest.php"/>
       <install name="tests/OAuthProvider/OAuthProviderTest.php" as="OAuthProvider/OAuthProviderTest.php"/>
-      <install name="src/OAuthProvider/OAuth_1a/AbstractProvider.php" as="OAuthProvider/OAuth_1a/AbstractProvider.php"/>
-      <install name="src/OAuthProvider/OAuth_1a/OAuthPlurk.php" as="OAuthProvider/OAuth_1a/OAuthPlurk.php"/>
-      <install name="src/OAuthProvider/OAuth_1a/OAuthTwitter.php" as="OAuthProvider/OAuth_1a/OAuthTwitter.php"/>
-      <install name="src/OAuthProvider/OAuth_2/AbstractProvider.php" as="OAuthProvider/OAuth_2/AbstractProvider.php"/>
-      <install name="src/OAuthProvider/OAuth_2/OAuthFacebook.php" as="OAuthProvider/OAuth_2/OAuthFacebook.php"/>
-      <install name="src/OAuthProvider/OAuth_2/OAuthGitHub.php" as="OAuthProvider/OAuth_2/OAuthGitHub.php"/>
-      <install name="src/OAuthProvider/OAuth_2/OAuthGoogle.php" as="OAuthProvider/OAuth_2/OAuthGoogle.php"/>
+      <install name="src/OAuthProvider/OAuth1/AbstractProvider.php" as="OAuthProvider/OAuth1/AbstractProvider.php"/>
+      <install name="src/OAuthProvider/OAuth1/OAuthPlurk.php" as="OAuthProvider/OAuth1/OAuthPlurk.php"/>
+      <install name="src/OAuthProvider/OAuth1/OAuthTwitter.php" as="OAuthProvider/OAuth1/OAuthTwitter.php"/>
+      <install name="src/OAuthProvider/OAuth2/AbstractProvider.php" as="OAuthProvider/OAuth2/AbstractProvider.php"/>
+      <install name="src/OAuthProvider/OAuth2/OAuthFacebook.php" as="OAuthProvider/OAuth2/OAuthFacebook.php"/>
+      <install name="src/OAuthProvider/OAuth2/OAuthGitHub.php" as="OAuthProvider/OAuth2/OAuthGitHub.php"/>
+      <install name="src/OAuthProvider/OAuth2/OAuthGoogle.php" as="OAuthProvider/OAuth2/OAuthGoogle.php"/>
       <install name="src/OAuthProvider/OAuthProvider.php" as="OAuthProvider/OAuthProvider.php"/>
     </filelist>
   </phprelease>

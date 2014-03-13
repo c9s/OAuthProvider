@@ -1,6 +1,6 @@
 <?php
 
-namespace OAuthProvider\OAuth_2;
+namespace OAuthProvider\OAuth2;
 
 abstract class AbstractProvider
 {

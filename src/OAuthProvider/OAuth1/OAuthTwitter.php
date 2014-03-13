@@ -1,5 +1,5 @@
 <?php
-namespace OAuthProvider\OAuth_1a;
+namespace OAuthProvider\OAuth1;
 
 class OAuthTwitter extends AbstractProvider
 {

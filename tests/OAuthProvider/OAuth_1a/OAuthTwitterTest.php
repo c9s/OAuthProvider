@@ -1,5 +1,5 @@
 <?php
-namespace OAuthProvider\OAuth_1a;
+namespace OAuthProvider\OAuth1;
 use PHPUnit_Framework_TestCase;
 use Exception;
 
