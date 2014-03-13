@@ -3,19 +3,19 @@ namespace OAuthProvider\OAuth2;
 
 class OAuthGitHub extends AbstractProvider
 {
-    const name = 'GitHub';
-    const host = 'github.com';
+    const NAME = 'GitHub';
+    const HOST = 'github.com';
 
     public function getAuthorizeUrl() {
-        return 'https://' . self::host . '/login/oauth/authorize';
+        return 'https://' . self::HOST . '/login/oauth/authorize';
     }
 
     public function getAccessTokenUrl() {
-        return 'https://' . self::host . '/login/oauth/access_token';
+        return 'https://' . self::HOST . '/login/oauth/access_token';
     }
 
     public function getValidScopes() {
-        return explode(',','user,public_repo,repo,gist');
+        return array('user','public_repo','repo','gist');
     }
 
     public function getResponseType() { 

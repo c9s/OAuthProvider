@@ -3,8 +3,8 @@ namespace OAuthProvider\OAuth2;
 
 class OAuthRunKeeper extends AbstractProvider
 {
-    const host = 'runkeeper.com';
-    const name = 'RunKeeper';
+    const HOST = 'runkeeper.com';
+    const NAME = 'RunKeeper';
 
     public function getAuthorizeUrl() {
         return 'https://runkeeper.com/apps/authorize';
@@ -15,7 +15,7 @@ class OAuthRunKeeper extends AbstractProvider
     }
 
     public function getValidScopes() {
-        return '';
+        return array();
     }
 
 }

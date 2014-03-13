@@ -4,20 +4,19 @@ namespace OAuthProvider\OAuth2;
 class OAuthGoogle
 {
     /*
-	version   => 2,
-	authorize_url    => 'https://accounts.google.com/o/oauth2/auth',
-	access_token_url => 'https://accounts.google.com/o/oauth2/token',
-	response_type    => 'code',
-	grant_type       => 'authorization_code',
-	request_method   => 'POST',
+        Version   => 2,
+        Authorize_url    => 'https://accounts.google.com/o/oauth2/auth',
+        Access_token_url => 'https://accounts.google.com/o/oauth2/token',
+        Response_type    => 'code',
+        Grant_type       => 'authorization_code',
+        Request_method   => 'POST',
     */
-    const host = 'accounts.google.com';
-    const name = 'Google';
+    const HOST = 'accounts.google.com';
+    const NAME = 'Google';
 
     public function getAuthorizeUrl() {
-	    return 'https://accounts.google.com/o/oauth2/auth';
+        return 'https://accounts.google.com/o/oauth2/auth';
     }
-
 
     public function getAccessTokenUrl() {
         return 'https://accounts.google.com/o/oauth2/token';
@@ -31,5 +30,5 @@ class OAuthGoogle
         return 'authorization_code';
     }
 
-    public function getValidScopes() { }
+    public function getValidScopes() { return array(); }
 }

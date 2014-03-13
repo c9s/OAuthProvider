@@ -5,9 +5,9 @@ namespace OAuthProvider\OAuth2;
 abstract class AbstractProvider
 {
 
-    const version = '2.0';
-    const host = '';
-    const name = '';
+    const VERSION = '2.0';
+    const HOST = '';
+    const NAME = '';
 
     public $clientId;
     public $clientSecret;
@@ -40,7 +40,7 @@ abstract class AbstractProvider
     abstract public function getAuthorizeUrl();
     abstract public function getAccessTokenUrl();
 
-    public function getValidScopes() {  }
+    public function getValidScopes() { return array(); }
 
     /**
      * return default response type: token
