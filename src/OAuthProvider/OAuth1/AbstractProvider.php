@@ -26,8 +26,8 @@ abstract class AbstractProvider
 
     public function getName()
     {
-        if( static::name )
-            return static::name;
+        if( static::NAME )
+            return static::NAME;
         return get_class($this);
     }
 
