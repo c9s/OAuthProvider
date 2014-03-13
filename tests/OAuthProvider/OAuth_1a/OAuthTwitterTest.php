@@ -14,6 +14,6 @@ class OAuthTwitterTest extends PHPUnit_Framework_TestCase
         ok( $twitterProvider );
 
         is( '1.0a' , $twitterProvider::version );
-        is( 'api.twitter.com' , $twitterProvider::host );
+        is( 'api.twitter.com' , $twitterProvider::HOST );
     }
 } 

@@ -7,9 +7,9 @@ namespace OAuthProvider\OAuth1;
  */
 abstract class AbstractProvider
 {
-    const version = '1.0a';
-    const host = '';
-    const name = '';
+    const VERSION = '1.0a';
+    const HOST = '';
+    const NAME = '';
 
     public $version = '1.0a';
     public $consumerKey;
