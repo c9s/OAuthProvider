@@ -18,6 +18,6 @@ class OAuthStrava extends AbstractProvider
     }
 
     public function getValidScopes() {
-        return array();
+        return array('public','write','view_private,write');
     }
 }
