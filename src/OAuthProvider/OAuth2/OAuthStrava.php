@@ -13,6 +13,10 @@ class OAuthStrava extends AbstractProvider
         return 'https://www.strava.com/oauth/authorize';
     }
 
+    public function getDeauthorizeUrl() {
+        return 'https://www.strava.com/oauth/deauthorize';
+    }
+
     public function getAccessTokenUrl() {
         return 'https://www.strava.com/oauth/token';
     }
@@ -20,4 +24,5 @@ class OAuthStrava extends AbstractProvider
     public function getValidScopes() {
         return array('public','write','view_private,write');
     }
+
 }

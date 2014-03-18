@@ -10,6 +10,10 @@ class OAuthRunKeeper extends AbstractProvider
         return 'https://runkeeper.com/apps/authorize';
     }
 
+    public function getDeauthorizeUrl() {
+        return 'https://runkeeper.com/apps/de-authorize';
+    }
+
     public function getAccessTokenUrl() {
         return 'https://runkeeper.com/apps/token';
     }
