@@ -5,21 +5,44 @@ namespace OAuthProvider\OAuth2;
 abstract class AbstractProvider
 {
 
+    /**
+     * @var string oauth implementation version.
+     */
     const VERSION = '2.0';
+
+    /**
+     * @var string the oauth service provider domain name, eg. api.nike.com
+     *
+     */
     const HOST = '';
+
+    /**
+     * @var string the oauth service provider name
+     */
     const NAME = '';
 
+
+    /**
+     * @var string the client id for oauth client, each oauth client has its own id.
+     */
     public $clientId;
+
+    /**
+     * @var string the client secret for oauth client, each oauth client has its own secret.
+     */
     public $clientSecret;
 
     public function __construct($options)
     {
-        if(isset($options['client_id']))
+        if (isset($options['client_id'])) {
             $this->clientId = $options['client_id'];
-        if(isset($options['client_secret']))
+        }
+        if (isset($options['client_secret'])) {
             $this->clientSecret = $options['client_secret'];
-        if(isset($options['valid_scopes']))
+        }
+        if (isset($options['valid_scopes'])) {
             $this->validScopes = $options['valid_scopes'];
+        }
     }
 
     public function getName()
@@ -28,6 +51,15 @@ abstract class AbstractProvider
             return static::NAME;
         }
         return get_class($this);
+    }
+
+    /**
+     * Get oauth provider identity
+     *
+     * @return string
+     */
+    public function getIdentity() {
+        return strtolower(static::NAME);
     }
 
     public function getClientId() {
@@ -44,9 +76,11 @@ abstract class AbstractProvider
     public function getValidScopes() { return array(); }
 
     /**
-     * return default response type: token
+     * Return default response type: token
      *
      * valid types: 'token', 'code'
+     *
+     * This should be based on the token response data.
      *
      * @see http://developers.gigya.com/020_Developer_Guide/85_REST/OAuth2
      */
