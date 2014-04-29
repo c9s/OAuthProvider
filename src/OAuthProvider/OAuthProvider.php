@@ -3,7 +3,7 @@ namespace OAuthProvider;
 use ReflectionClass;
 
 /**
- * @VERSION 1.1.0
+ * @VERSION 1.2.0
  */
 
 class OAuthProvider 
